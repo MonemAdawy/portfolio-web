@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MONEM_ADAWY // Backend Architect Portfolio</title>
+
+<!-- Tailwind CSS CDN (يجب أن يكون أولاً) -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "surface": "#0c0e11",
+                    "on-surface": "#f9f9fd",
+                    "on-surface-variant": "#aaabaf",
+                    "primary": "#3fff8b",
+                    "secondary": "#74fbbb",
+                    "tertiary": "#7ae6ff",
+                    "primary-dim": "#24f07e",
+                    "secondary-dim": "#65ecae",
+                    "tertiary-dim": "#00cdec",
+                    "surface-container": "#171a1d",
+                    "surface-container-low": "#111417",
+                    "surface-container-high": "#1d2024",
+                    "surface-container-highest": "#23262a",
+                    "surface-container-lowest": "#000000",
+                    "outline": "#747579",
+                    "outline-variant": "#46484b",
+                    "error": "#ff716c",
+                    "error-dim": "#d7383b",
+                    "on-primary": "#005d2c"
+                },
+                borderRadius: {
+                    DEFAULT: "0.125rem",
+                    lg: "0.25rem",
+                    xl: "0.5rem",
+                    full: "0.75rem"
+                },
+                fontFamily: {
+                    headline: ["Space Grotesk", "sans-serif"],
+                    body: ["Inter", "sans-serif"],
+                    mono: ["JetBrains Mono", "monospace"]
+                }
+            }
+        }
+    }
+</script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<!-- Custom CSS (بعد Tailwind) -->
+<link rel="stylesheet" href="css/main.css"/>
+
+<!-- Custom CSS for specific sections (اختياري) -->
+<link rel="stylesheet" href="css/navbar.css"/>
+<link rel="stylesheet" href="css/hero.css"/>
+<link rel="stylesheet" href="css/projects.css"/>
+<link rel="stylesheet" href="css/skills.css"/>
+<link rel="stylesheet" href="css/services.css"/>
+<link rel="stylesheet" href="css/about.css"/>
+<link rel="stylesheet" href="css/contact.css"/>
+<link rel="stylesheet" href="css/footer.css"/>
+</head>
+<body class="bg-surface text-on-surface">
+
+<!-- Main App Container -->
+<div id="app">
+    <div id="navbar"></div>
+    <main>
+        <div id="hero"></div>
+        <div id="about"></div>
+        <div id="projects"></div>
+        <div id="services"></div>
+        <div id="skills"></div>
+        <!-- <div id="philosophy"></div> -->
+        <div id="career"></div>
+        <div id="education"></div>
+        <div id="contact"></div>
+        <!-- <div id="cta"></div> -->
+    </main>
+    <div id="footer"></div>
+</div>
+
+<!-- Scripts -->
+<script src="js/config.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
